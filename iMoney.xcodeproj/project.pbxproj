@@ -23,6 +23,11 @@
 		3FF930F31D3D915B00EE3B12 /* Receita.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF930E91D3D915B00EE3B12 /* Receita.swift */; };
 		3FF930F41D3D915B00EE3B12 /* Conta+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF930EA1D3D915B00EE3B12 /* Conta+CoreDataProperties.swift */; };
 		3FF930F51D3D915B00EE3B12 /* Conta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF930EB1D3D915B00EE3B12 /* Conta.swift */; };
+		3FF930F71D3D944900EE3B12 /* DespesaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF930F61D3D944900EE3B12 /* DespesaDAO.swift */; };
+		3FF930F91D3D95D100EE3B12 /* MoedaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF930F81D3D95D100EE3B12 /* MoedaDAO.swift */; };
+		3FF930FB1D3D96B200EE3B12 /* UsuarioDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF930FA1D3D96B200EE3B12 /* UsuarioDAO.swift */; };
+		3FF930FD1D3D979B00EE3B12 /* ReceitaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF930FC1D3D979B00EE3B12 /* ReceitaDAO.swift */; };
+		3FF930FF1D3D985900EE3B12 /* ContaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF930FE1D3D985900EE3B12 /* ContaDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +49,11 @@
 		3FF930E91D3D915B00EE3B12 /* Receita.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Receita.swift; sourceTree = "<group>"; };
 		3FF930EA1D3D915B00EE3B12 /* Conta+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Conta+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3FF930EB1D3D915B00EE3B12 /* Conta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conta.swift; sourceTree = "<group>"; };
+		3FF930F61D3D944900EE3B12 /* DespesaDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DespesaDAO.swift; sourceTree = "<group>"; };
+		3FF930F81D3D95D100EE3B12 /* MoedaDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoedaDAO.swift; sourceTree = "<group>"; };
+		3FF930FA1D3D96B200EE3B12 /* UsuarioDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsuarioDAO.swift; sourceTree = "<group>"; };
+		3FF930FC1D3D979B00EE3B12 /* ReceitaDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceitaDAO.swift; sourceTree = "<group>"; };
+		3FF930FE1D3D985900EE3B12 /* ContaDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContaDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +143,11 @@
 			isa = PBXGroup;
 			children = (
 				3FF9309C1D3D7FC100EE3B12 /* iMoney.xcdatamodeld */,
+				3FF930F61D3D944900EE3B12 /* DespesaDAO.swift */,
+				3FF930F81D3D95D100EE3B12 /* MoedaDAO.swift */,
+				3FF930FA1D3D96B200EE3B12 /* UsuarioDAO.swift */,
+				3FF930FC1D3D979B00EE3B12 /* ReceitaDAO.swift */,
+				3FF930FE1D3D985900EE3B12 /* ContaDAO.swift */,
 			);
 			name = "DAO (Data Access Object)";
 			sourceTree = "<group>";
@@ -214,12 +229,17 @@
 				3FF930981D3D7FC100EE3B12 /* ViewController.swift in Sources */,
 				3FF930EE1D3D915B00EE3B12 /* Moeda+CoreDataProperties.swift in Sources */,
 				3FF930961D3D7FC100EE3B12 /* AppDelegate.swift in Sources */,
+				3FF930FF1D3D985900EE3B12 /* ContaDAO.swift in Sources */,
 				3FF930F41D3D915B00EE3B12 /* Conta+CoreDataProperties.swift in Sources */,
+				3FF930FB1D3D96B200EE3B12 /* UsuarioDAO.swift in Sources */,
 				3FF930F01D3D915B00EE3B12 /* Usuario+CoreDataProperties.swift in Sources */,
+				3FF930FD1D3D979B00EE3B12 /* ReceitaDAO.swift in Sources */,
 				3FF930F11D3D915B00EE3B12 /* Usuario.swift in Sources */,
 				3FF930EC1D3D915B00EE3B12 /* Despesa+CoreDataProperties.swift in Sources */,
+				3FF930F71D3D944900EE3B12 /* DespesaDAO.swift in Sources */,
 				3FF930EF1D3D915B00EE3B12 /* Moeda.swift in Sources */,
 				3FF930F21D3D915B00EE3B12 /* Receita+CoreDataProperties.swift in Sources */,
+				3FF930F91D3D95D100EE3B12 /* MoedaDAO.swift in Sources */,
 				3FF9309E1D3D7FC100EE3B12 /* iMoney.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

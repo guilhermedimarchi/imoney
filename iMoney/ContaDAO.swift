@@ -58,7 +58,7 @@ class ContaDAO {
         
         do {
             try context.save()
-            print("Conta \(receita.nome) foi DELETADA o/")
+            print("Conta \(conta.nome) foi DELETADA o/")
             
         } catch let erro as NSError {
             print(erro)

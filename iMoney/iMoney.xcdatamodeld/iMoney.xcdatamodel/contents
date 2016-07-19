@@ -1,4 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="Conta" representedClassName=".Conta" syncable="YES">
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="despesa" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Despesa" syncable="YES"/>
+        <relationship name="moeda" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Moeda" syncable="YES"/>
+        <relationship name="receita" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Receita" syncable="YES"/>
+    </entity>
+    <entity name="Despesa" representedClassName=".Despesa" syncable="YES">
+        <attribute name="categoria" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="data" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="local" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parcelaAtual" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="parcelaTotal" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="valor" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Moeda" representedClassName=".Moeda" syncable="YES">
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Receita" representedClassName=".Receita" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="valor" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Usuario" representedClassName=".Usuario" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="senha" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="conta" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Conta" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Receita" positionX="-317" positionY="117" width="128" height="88"/>
+        <element name="Despesa" positionX="-236" positionY="-76" width="128" height="148"/>
+        <element name="Conta" positionX="-74" positionY="81" width="128" height="103"/>
+        <element name="Moeda" positionX="106" positionY="111" width="128" height="58"/>
+        <element name="Usuario" positionX="-54" positionY="-144" width="128" height="103"/>
+    </elements>
 </model>

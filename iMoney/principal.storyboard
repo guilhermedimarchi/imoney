@@ -383,21 +383,51 @@
         <!--Relatorio-->
         <scene sceneID="QMo-af-hXc">
             <objects>
-                <viewController title="Relatorio" id="lzo-mY-NbA" sceneMemberID="viewController">
+                <viewController title="Relatorio" id="lzo-mY-NbA" customClass="ChartsViewController" customModule="iMoney" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9QW-bM-aaQ"/>
                         <viewControllerLayoutGuide type="bottom" id="y0U-Co-eTt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VDc-sV-NhC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="HCY-zg-8Yz">
+                                <rect key="frame" x="96" y="67" width="560" height="373"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xxr-Lg-eEe" customClass="PieChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="263"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muR-6S-ImO" userLabel="Label">
+                                        <rect key="frame" x="0.0" y="303" width="560" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="KHL-Z0-NYf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="35"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HCY-zg-8Yz" firstAttribute="leading" secondItem="VDc-sV-NhC" secondAttribute="leadingMargin" id="FyW-29-o2G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HCY-zg-8Yz" secondAttribute="trailing" id="XCF-mc-dcx"/>
+                            <constraint firstItem="HCY-zg-8Yz" firstAttribute="top" secondItem="9QW-bM-aaQ" secondAttribute="bottom" id="sm6-4U-abl"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Relatorio" id="G8u-aB-lJ5"/>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="9Qi-Pz-N3Q"/>
+                    <connections>
+                        <outlet property="pieChartView" destination="Xxr-Lg-eEe" id="LwA-zX-Kgm"/>
+                        <outlet property="selectedCellLabel" destination="muR-6S-ImO" id="SN0-lT-32l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a8b-I7-fsD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="161" y="603"/>
+            <point key="canvasLocation" x="973" y="603"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="nyf-zr-x4G">
@@ -411,7 +441,7 @@
                     <connections>
                         <segue destination="RGR-V6-Pq3" kind="relationship" relationship="viewControllers" id="Jar-tx-NMU"/>
                         <segue destination="SpW-SZ-wuc" kind="relationship" relationship="viewControllers" id="Bdz-1A-1gD"/>
-                        <segue destination="lzo-mY-NbA" kind="relationship" relationship="viewControllers" id="ltr-Ig-SDR"/>
+                        <segue destination="FZz-49-Aaz" kind="relationship" relationship="viewControllers" id="ltr-Ig-SDR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O7H-17-Tu5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -436,6 +466,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LPy-Hf-4BV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-409" y="-317"/>
+        </scene>
+        <!--Relatorio-->
+        <scene sceneID="XgC-dZ-Kee">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FZz-49-Aaz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Relatorio" id="G8u-aB-lJ5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ic3-KN-DLf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lzo-mY-NbA" kind="relationship" relationship="rootViewController" id="5Yi-Pj-JOF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="akm-I7-HKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161" y="603"/>
         </scene>
     </scenes>
     <resources>

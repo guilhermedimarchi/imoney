@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F00988A1D3EF97A00F93F32 /* Despesa+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0098801D3EF97A00F93F32 /* Despesa+CoreDataProperties.swift */; };
+		3F00988B1D3EF97A00F93F32 /* Despesa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0098811D3EF97A00F93F32 /* Despesa.swift */; };
+		3F00988C1D3EF97A00F93F32 /* Conta+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0098821D3EF97A00F93F32 /* Conta+CoreDataProperties.swift */; };
+		3F00988D1D3EF97A00F93F32 /* Conta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0098831D3EF97A00F93F32 /* Conta.swift */; };
+		3F00988E1D3EF97A00F93F32 /* Moeda+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0098841D3EF97A00F93F32 /* Moeda+CoreDataProperties.swift */; };
+		3F00988F1D3EF97A00F93F32 /* Moeda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0098851D3EF97A00F93F32 /* Moeda.swift */; };
+		3F0098901D3EF97A00F93F32 /* Receita+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0098861D3EF97A00F93F32 /* Receita+CoreDataProperties.swift */; };
+		3F0098911D3EF97A00F93F32 /* Receita.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0098871D3EF97A00F93F32 /* Receita.swift */; };
+		3F0098921D3EF97A00F93F32 /* Usuario+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0098881D3EF97A00F93F32 /* Usuario+CoreDataProperties.swift */; };
+		3F0098931D3EF97A00F93F32 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0098891D3EF97A00F93F32 /* Usuario.swift */; };
+		3F0098941D3EF9A900F93F32 /* DespesaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF930F61D3D944900EE3B12 /* DespesaDAO.swift */; };
+		3F0098951D3EF9A900F93F32 /* MoedaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF930F81D3D95D100EE3B12 /* MoedaDAO.swift */; };
+		3F0098961D3EF9A900F93F32 /* ReceitaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF930FC1D3D979B00EE3B12 /* ReceitaDAO.swift */; };
+		3F0098971D3EF9A900F93F32 /* UsuarioDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF930FA1D3D96B200EE3B12 /* UsuarioDAO.swift */; };
+		3F0098981D3EF9A900F93F32 /* ContaDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF930FE1D3D985900EE3B12 /* ContaDAO.swift */; };
 		3FC86EBD1D3D92AC006E5AD7 /* PrincipalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC86EBC1D3D92AC006E5AD7 /* PrincipalTableViewController.swift */; };
 		3FC86EBF1D3D9351006E5AD7 /* PrincipalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC86EBE1D3D9351006E5AD7 /* PrincipalTableViewCell.swift */; };
 		3FDCAE501D3ED55900F825CE /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDCAE491D3ED54400F825CE /* Charts.framework */; };
@@ -23,10 +38,6 @@
 		3FF9309E1D3D7FC100EE3B12 /* iMoney.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9309C1D3D7FC100EE3B12 /* iMoney.xcdatamodeld */; };
 		3FF930A01D3D7FC100EE3B12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF9309F1D3D7FC100EE3B12 /* Assets.xcassets */; };
 		3FF930A31D3D7FC100EE3B12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF930A11D3D7FC100EE3B12 /* LaunchScreen.storyboard */; };
-		3FF930ED1D3D915B00EE3B12 /* Despesa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF930E31D3D915B00EE3B12 /* Despesa.swift */; };
-		3FF930EE1D3D915B00EE3B12 /* Moeda+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF930E41D3D915B00EE3B12 /* Moeda+CoreDataProperties.swift */; };
-		3FF930F31D3D915B00EE3B12 /* Receita.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF930E91D3D915B00EE3B12 /* Receita.swift */; };
-		3FF930F51D3D915B00EE3B12 /* Conta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF930EB1D3D915B00EE3B12 /* Conta.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +111,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F0098801D3EF97A00F93F32 /* Despesa+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Despesa+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F0098811D3EF97A00F93F32 /* Despesa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Despesa.swift; sourceTree = "<group>"; };
+		3F0098821D3EF97A00F93F32 /* Conta+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Conta+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F0098831D3EF97A00F93F32 /* Conta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conta.swift; sourceTree = "<group>"; };
+		3F0098841D3EF97A00F93F32 /* Moeda+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Moeda+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F0098851D3EF97A00F93F32 /* Moeda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moeda.swift; sourceTree = "<group>"; };
+		3F0098861D3EF97A00F93F32 /* Receita+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Receita+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F0098871D3EF97A00F93F32 /* Receita.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Receita.swift; sourceTree = "<group>"; };
+		3F0098881D3EF97A00F93F32 /* Usuario+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Usuario+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F0098891D3EF97A00F93F32 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		3FC86EBC1D3D92AC006E5AD7 /* PrincipalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrincipalTableViewController.swift; sourceTree = "<group>"; };
 		3FC86EBE1D3D9351006E5AD7 /* PrincipalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrincipalTableViewCell.swift; sourceTree = "<group>"; };
 		3FDCAE411D3ED54400F825CE /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
@@ -115,16 +136,6 @@
 		3FF9309F1D3D7FC100EE3B12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FF930A21D3D7FC100EE3B12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FF930A41D3D7FC100EE3B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FF930E21D3D915B00EE3B12 /* Despesa+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Despesa+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3FF930E31D3D915B00EE3B12 /* Despesa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Despesa.swift; sourceTree = "<group>"; };
-		3FF930E41D3D915B00EE3B12 /* Moeda+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Moeda+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3FF930E51D3D915B00EE3B12 /* Moeda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moeda.swift; sourceTree = "<group>"; };
-		3FF930E61D3D915B00EE3B12 /* Usuario+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Usuario+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3FF930E71D3D915B00EE3B12 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
-		3FF930E81D3D915B00EE3B12 /* Receita+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Receita+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3FF930E91D3D915B00EE3B12 /* Receita.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Receita.swift; sourceTree = "<group>"; };
-		3FF930EA1D3D915B00EE3B12 /* Conta+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Conta+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3FF930EB1D3D915B00EE3B12 /* Conta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conta.swift; sourceTree = "<group>"; };
 		3FF930F61D3D944900EE3B12 /* DespesaDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DespesaDAO.swift; sourceTree = "<group>"; };
 		3FF930F81D3D95D100EE3B12 /* MoedaDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoedaDAO.swift; sourceTree = "<group>"; };
 		3FF930FA1D3D96B200EE3B12 /* UsuarioDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsuarioDAO.swift; sourceTree = "<group>"; };
@@ -192,7 +203,6 @@
 				3FF930951D3D7FC100EE3B12 /* AppDelegate.swift */,
 				3FF9309F1D3D7FC100EE3B12 /* Assets.xcassets */,
 				3FF930A41D3D7FC100EE3B12 /* Info.plist */,
-				3FF9309C1D3D7FC100EE3B12 /* iMoney.xcdatamodeld */,
 			);
 			path = iMoney;
 			sourceTree = "<group>";
@@ -230,16 +240,16 @@
 		3FF930AE1D3D835700EE3B12 /* VO (Value Object) */ = {
 			isa = PBXGroup;
 			children = (
-				3FF930E21D3D915B00EE3B12 /* Despesa+CoreDataProperties.swift */,
-				3FF930E31D3D915B00EE3B12 /* Despesa.swift */,
-				3FF930E41D3D915B00EE3B12 /* Moeda+CoreDataProperties.swift */,
-				3FF930E51D3D915B00EE3B12 /* Moeda.swift */,
-				3FF930E61D3D915B00EE3B12 /* Usuario+CoreDataProperties.swift */,
-				3FF930E71D3D915B00EE3B12 /* Usuario.swift */,
-				3FF930E81D3D915B00EE3B12 /* Receita+CoreDataProperties.swift */,
-				3FF930E91D3D915B00EE3B12 /* Receita.swift */,
-				3FF930EA1D3D915B00EE3B12 /* Conta+CoreDataProperties.swift */,
-				3FF930EB1D3D915B00EE3B12 /* Conta.swift */,
+				3F0098801D3EF97A00F93F32 /* Despesa+CoreDataProperties.swift */,
+				3F0098811D3EF97A00F93F32 /* Despesa.swift */,
+				3F0098821D3EF97A00F93F32 /* Conta+CoreDataProperties.swift */,
+				3F0098831D3EF97A00F93F32 /* Conta.swift */,
+				3F0098841D3EF97A00F93F32 /* Moeda+CoreDataProperties.swift */,
+				3F0098851D3EF97A00F93F32 /* Moeda.swift */,
+				3F0098861D3EF97A00F93F32 /* Receita+CoreDataProperties.swift */,
+				3F0098871D3EF97A00F93F32 /* Receita.swift */,
+				3F0098881D3EF97A00F93F32 /* Usuario+CoreDataProperties.swift */,
+				3F0098891D3EF97A00F93F32 /* Usuario.swift */,
 			);
 			name = "VO (Value Object)";
 			sourceTree = "<group>";
@@ -247,6 +257,7 @@
 		3FF930AF1D3D836F00EE3B12 /* DAO (Data Access Object) */ = {
 			isa = PBXGroup;
 			children = (
+				3FF9309C1D3D7FC100EE3B12 /* iMoney.xcdatamodeld */,
 				3FF930F61D3D944900EE3B12 /* DespesaDAO.swift */,
 				3FF930F81D3D95D100EE3B12 /* MoedaDAO.swift */,
 				3FF930FC1D3D979B00EE3B12 /* ReceitaDAO.swift */,
@@ -370,16 +381,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FF930F31D3D915B00EE3B12 /* Receita.swift in Sources */,
-				3FF930ED1D3D915B00EE3B12 /* Despesa.swift in Sources */,
-				3FF930F51D3D915B00EE3B12 /* Conta.swift in Sources */,
+				3F0098941D3EF9A900F93F32 /* DespesaDAO.swift in Sources */,
+				3F0098951D3EF9A900F93F32 /* MoedaDAO.swift in Sources */,
+				3F0098961D3EF9A900F93F32 /* ReceitaDAO.swift in Sources */,
+				3F0098971D3EF9A900F93F32 /* UsuarioDAO.swift in Sources */,
+				3F0098981D3EF9A900F93F32 /* ContaDAO.swift in Sources */,
 				3FF930981D3D7FC100EE3B12 /* ViewController.swift in Sources */,
-				3FF930EE1D3D915B00EE3B12 /* Moeda+CoreDataProperties.swift in Sources */,
+				3F00988C1D3EF97A00F93F32 /* Conta+CoreDataProperties.swift in Sources */,
+				3F0098901D3EF97A00F93F32 /* Receita+CoreDataProperties.swift in Sources */,
+				3F00988E1D3EF97A00F93F32 /* Moeda+CoreDataProperties.swift in Sources */,
+				3F0098931D3EF97A00F93F32 /* Usuario.swift in Sources */,
+				3F00988D1D3EF97A00F93F32 /* Conta.swift in Sources */,
+				3F00988B1D3EF97A00F93F32 /* Despesa.swift in Sources */,
 				3FF930961D3D7FC100EE3B12 /* AppDelegate.swift in Sources */,
 				3FDCAEC51D3EE2CA00F825CE /* BTNavigationDropdownMenu.swift in Sources */,
+				3F00988F1D3EF97A00F93F32 /* Moeda.swift in Sources */,
 				3FC86EBD1D3D92AC006E5AD7 /* PrincipalTableViewController.swift in Sources */,
 				3FDCAE561D3ED5E900F825CE /* ChartsViewController.swift in Sources */,
 				3FF9309E1D3D7FC100EE3B12 /* iMoney.xcdatamodeld in Sources */,
+				3F0098921D3EF97A00F93F32 /* Usuario+CoreDataProperties.swift in Sources */,
+				3F00988A1D3EF97A00F93F32 /* Despesa+CoreDataProperties.swift in Sources */,
+				3F0098911D3EF97A00F93F32 /* Receita.swift in Sources */,
 				3FC86EBF1D3D9351006E5AD7 /* PrincipalTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

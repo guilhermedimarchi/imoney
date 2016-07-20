@@ -35,9 +35,6 @@ class PrincipalTableViewController: UITableViewController {
         
         list = ReceitaDAO.buscarTodos()
         
-        
-            
-            
             
         navigationItem.title = "Conta 1"
 /*
@@ -80,7 +77,7 @@ class PrincipalTableViewController: UITableViewController {
         
         cell.nome.text = principal.nome
         cell.valor.text = "R$ " + String(principal.valor)
-        cell.data.text = principal.data
+        cell.data.text = String(principal.data)
         
         
         return cell

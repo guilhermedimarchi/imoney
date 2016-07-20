@@ -66,6 +66,27 @@ class UsuarioDAO {
     }
     
     
+    static func buscarUsuario(usuario: String) -> Usuario! {
+    
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = appDelegate.managedObjectContext
+        
+        let request: NSFetchRequest = NSFetchRequest(entityName: "Usuario")
+        
+        request.predicate = NSPredicate(format: "nome == %@", usuario)
+        request.sortDescriptors = [NSSortDescriptor(key: "nome", ascending: true)]
+        
+        
+        if let user = try? context.executeRequest(request) as! Usuario {
+            return user
+        }
+        else {
+            return nil
+        }
+        
+    }
+    
+    
     static func buscarTodos() -> [Usuario] {
         // obtendo AppDelegate onde esta a Core Data stack
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate

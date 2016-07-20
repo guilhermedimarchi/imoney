@@ -2,7 +2,7 @@
 //  Despesa+CoreDataProperties.swift
 //  iMoney
 //
-//  Created by Student on 7/18/16.
+//  Created by Student on 7/19/16.
 //  Copyright © 2016 Student. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -14,12 +14,12 @@ import CoreData
 
 extension Despesa {
 
-    @NSManaged var nome: String?
-    @NSManaged var valor: NSNumber?
-    @NSManaged var data: NSDate?
     @NSManaged var categoria: String?
+    @NSManaged var data: NSDate?
     @NSManaged var local: String?
+    @NSManaged var nome: String?
     @NSManaged var parcelaAtual: NSNumber?
     @NSManaged var parcelaTotal: NSNumber?
+    @NSManaged var valor: NSNumber?
 
 }

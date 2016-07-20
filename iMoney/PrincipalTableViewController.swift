@@ -9,7 +9,8 @@
 import UIKit
 
 
-struct Receita {
+/*
+struct Receita2 {
     
     var nome: String!
     var valor: Double!
@@ -22,17 +23,24 @@ struct Receita {
     }
 }
 
-
+*/
 class PrincipalTableViewController: UITableViewController {
     
     
-    var list: [Receita] = [Receita]()
-
+    var list: [Receita] = []
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Conta 1"
         
+        list = ReceitaDAO.buscarTodos()
+        
+        
+            
+            
+            
+        navigationItem.title = "Conta 1"
+/*
         let a = Receita(nome: "Mercado", valor: 25.2, data: "25/01/2016")
         let b = Receita(nome: "Livro", valor: 145.2, data: "25/01/2016")
         let c = Receita(nome: "Aviao", valor: 8, data: "25/01/2016")
@@ -42,7 +50,7 @@ class PrincipalTableViewController: UITableViewController {
         list.append(b)
         list.append(c)
         list.append(d)
-        
+  */
     }
 
     override func didReceiveMemoryWarning() {

@@ -2,7 +2,7 @@
 //  Usuario+CoreDataProperties.swift
 //  iMoney
 //
-//  Created by Student on 7/18/16.
+//  Created by Student on 7/19/16.
 //  Copyright © 2016 Student. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -14,9 +14,9 @@ import CoreData
 
 extension Usuario {
 
-    @NSManaged var nome: String?
     @NSManaged var email: String?
+    @NSManaged var nome: String?
     @NSManaged var senha: String?
-    @NSManaged var conta: Conta?
+    @NSManaged var conta: NSSet?
 
 }

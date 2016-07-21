@@ -31,6 +31,7 @@
 		3FB3D3E01D402F6D00F76DA6 /* GestaoReceita.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB3D3DF1D402F6D00F76DA6 /* GestaoReceita.swift */; };
 		3FB3D3E21D40305500F76DA6 /* GestaoDespesa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB3D3E11D40305500F76DA6 /* GestaoDespesa.swift */; };
 		3FB3D3E41D40317500F76DA6 /* ContaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB3D3E31D40317500F76DA6 /* ContaApp.swift */; };
+		3FB3D3E91D404BAD00F76DA6 /* GestaoFinanceiraDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB3D3E81D404BAD00F76DA6 /* GestaoFinanceiraDAO.swift */; };
 		3FC86EBD1D3D92AC006E5AD7 /* PrincipalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC86EBC1D3D92AC006E5AD7 /* PrincipalTableViewController.swift */; };
 		3FC86EBF1D3D9351006E5AD7 /* PrincipalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC86EBE1D3D9351006E5AD7 /* PrincipalTableViewCell.swift */; };
 		3FDCAE561D3ED5E900F825CE /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCAE551D3ED5E900F825CE /* ChartsViewController.swift */; };
@@ -126,6 +127,7 @@
 		3FB3D3DF1D402F6D00F76DA6 /* GestaoReceita.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestaoReceita.swift; sourceTree = "<group>"; };
 		3FB3D3E11D40305500F76DA6 /* GestaoDespesa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestaoDespesa.swift; sourceTree = "<group>"; };
 		3FB3D3E31D40317500F76DA6 /* ContaApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContaApp.swift; sourceTree = "<group>"; };
+		3FB3D3E81D404BAD00F76DA6 /* GestaoFinanceiraDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestaoFinanceiraDAO.swift; sourceTree = "<group>"; };
 		3FC86EBC1D3D92AC006E5AD7 /* PrincipalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrincipalTableViewController.swift; sourceTree = "<group>"; };
 		3FC86EBE1D3D9351006E5AD7 /* PrincipalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrincipalTableViewCell.swift; sourceTree = "<group>"; };
 		3FDCAE551D3ED5E900F825CE /* ChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				3FF930FC1D3D979B00EE3B12 /* ReceitaDAO.swift */,
 				3FF930FA1D3D96B200EE3B12 /* UsuarioDAO.swift */,
 				3FF930FE1D3D985900EE3B12 /* ContaDAO.swift */,
+				3FB3D3E81D404BAD00F76DA6 /* GestaoFinanceiraDAO.swift */,
 			);
 			name = "DAO (Data Access Object)";
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				3FF930961D3D7FC100EE3B12 /* AppDelegate.swift in Sources */,
 				3FB3D3D51D402D2500F76DA6 /* MoedaTipo.swift in Sources */,
 				3FB3D3E21D40305500F76DA6 /* GestaoDespesa.swift in Sources */,
+				3FB3D3E91D404BAD00F76DA6 /* GestaoFinanceiraDAO.swift in Sources */,
 				3FB3D3DA1D402DEC00F76DA6 /* GestaoFinanceiraProtocol.swift in Sources */,
 				3FDCAEC51D3EE2CA00F825CE /* BTNavigationDropdownMenu.swift in Sources */,
 				3FB3D3DE1D402EAF00F76DA6 /* UsuarioApp.swift in Sources */,

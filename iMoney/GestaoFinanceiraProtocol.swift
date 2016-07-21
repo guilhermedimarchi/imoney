@@ -10,11 +10,16 @@ import Foundation
 import UIKit
 import CoreData
 
-protocol GestaoFinanceiraProtocol {
 
-    var nome: String { get set }
+class GestaoFinanceiraProtocol {
+
+    var receita: Receita?
+    var despesa: Despesa? 
+    
+    
+    /*var nome: String { get set }
     var valor: Double { get set}
     var data: NSDate { get set }
-    var moeda: MoedaTipo { get set }
+    var moeda: MoedaTipo { get set }*/
     
 }

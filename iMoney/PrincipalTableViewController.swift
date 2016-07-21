@@ -27,13 +27,12 @@ struct Receita2 {
 class PrincipalTableViewController: UITableViewController {
     
     
-    var list: [Receita] = []
-    
+    var list: [GestaoFinanceiraProtocol] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        list = ReceitaDAO.buscarTodos()
+        list = GestaoFinanceiraDAO.buscarTodos()
         
             
         navigationItem.title = "Conta 1"
@@ -53,6 +52,11 @@ class PrincipalTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.list = GestaoFinanceiraDAO.buscarTodos()
+        self.tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -75,9 +79,21 @@ class PrincipalTableViewController: UITableViewController {
         
         let principal = list[indexPath.row]
         
-        cell.nome.text = principal.nome
-        cell.valor.text = "R$ " + String(principal.valor)
-        cell.data.text = String(principal.data)
+        if principal is GestaoDespesa {
+            cell.nome.text = principal.despesa!.nome
+            cell.valor.text = "R$ " + String(principal.despesa!.valor)
+            cell.data.text = String(principal.despesa!.data)
+        }
+        else {
+            cell.nome.text = principal.receita!.nome
+            cell.valor.text = "R$ " + String(principal.receita!.valor)
+            cell.data.text = String(principal.receita!.data)
+
+        }
+        
+        
+        
+        
         
         
         return cell

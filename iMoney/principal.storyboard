@@ -83,7 +83,7 @@
         <!--Adicionar-->
         <scene sceneID="VJ5-Xg-IlQ">
             <objects>
-                <viewController title="Adicionar" id="SpW-SZ-wuc" sceneMemberID="viewController">
+                <viewController title="Adicionar" id="SpW-SZ-wuc" customClass="ViewController" customModule="iMoney" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1xx-4g-J79"/>
                         <viewControllerLayoutGuide type="bottom" id="w6J-n5-4gf"/>
@@ -96,7 +96,11 @@
                                 <rect key="frame" x="0.0" y="-8" width="611" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="HvV-md-WSl">
-                                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="Ttq-aU-lsV"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="Ttq-aU-lsV">
+                                            <connections>
+                                                <action selector="salvarGestao:" destination="SpW-SZ-wuc" id="j2q-lA-aFz"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -112,6 +116,9 @@
                                                     <segment title="Receita"/>
                                                     <segment title="Despesa"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="tappedShowOpcao:" destination="SpW-SZ-wuc" eventType="valueChanged" id="2gN-Gq-xkS"/>
+                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                     </stackView>
@@ -240,6 +247,15 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Adicionar" id="fFt-uI-nfZ"/>
+                    <connections>
+                        <outlet property="fieldDescricao" destination="gaV-ZA-j1z" id="PgX-A9-kw2"/>
+                        <outlet property="fieldParcelaAtual" destination="1lX-I8-f0N" id="ckQ-Ou-7Cp"/>
+                        <outlet property="fieldParcelaTotal" destination="x0g-PA-2YF" id="PPM-E4-dq3"/>
+                        <outlet property="fieldValor" destination="mZ8-Gd-igX" id="hia-YY-LEr"/>
+                        <outlet property="labelDe" destination="B3I-B9-qH3" id="VCK-VE-ugt"/>
+                        <outlet property="labelParcela" destination="PBF-fU-vqU" id="dji-Nd-l71"/>
+                        <outlet property="opcao" destination="a33-rU-8n2" id="f8r-au-p7v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gi8-SW-2jK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

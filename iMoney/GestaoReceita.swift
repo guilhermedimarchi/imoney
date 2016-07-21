@@ -12,25 +12,6 @@ import CoreData
 
 class GestaoReceita: GestaoFinanceiraProtocol {
     
-    var nome: String {
-        get { return self.nome }
-        set {
-            
-        }
-    }
-    
-    var valor: Double {
-        get { return self.valor}
-        set {}
-    }
-    
-    var data: NSDate {
-        get { return self.data }
-        set {}
-    }
-    var moeda: MoedaTipo {
-        get { return self.moeda }
-        set {}
-    }
+       
     
 }

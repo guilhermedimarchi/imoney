@@ -248,6 +248,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Adicionar" id="fFt-uI-nfZ"/>
                     <connections>
+                        <outlet property="fieldData" destination="CMG-XR-hly" id="IsF-kN-NUV"/>
                         <outlet property="fieldDescricao" destination="gaV-ZA-j1z" id="PgX-A9-kw2"/>
                         <outlet property="fieldParcelaAtual" destination="1lX-I8-f0N" id="ckQ-Ou-7Cp"/>
                         <outlet property="fieldParcelaTotal" destination="x0g-PA-2YF" id="PPM-E4-dq3"/>

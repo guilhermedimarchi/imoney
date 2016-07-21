@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var fieldParcelaTotal: UITextField!
     @IBOutlet weak var fieldDescricao: UITextField!
     @IBOutlet weak var fieldValor: UITextField!
+    @IBOutlet weak var fieldData: UIDatePicker!
+    
     @IBOutlet weak var opcao: UISegmentedControl!
     
     @IBOutlet weak var labelParcela: UILabel!
@@ -26,6 +28,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+      /*
+        self.fieldParcelaTotal.alpha = 0
+        self.fieldParcelaAtual.alpha = 0
+        self.fieldDescricao.alpha    = 0
+        self.fieldValor.alpha        = 0
+        */
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,17 +63,25 @@ class ViewController: UIViewController {
     @IBAction func salvarGestao(sender: AnyObject) {
         
         if (self.opcao.titleForSegmentAtIndex(opcao.selectedSegmentIndex) == "Despesa") {
+            
             let despesa: Despesa = Despesa()
+            
             despesa.nome         = self.fieldDescricao.text
             despesa.valor        = Double(self.fieldValor.text!)
             despesa.parcelaAtual = Int(self.fieldParcelaAtual.text!)
             despesa.parcelaTotal = Int(self.fieldParcelaTotal.text!)
+            despesa.data = self.fieldData.date
+        
             DespesaDAO.inserir(despesa)
         }
         else {
+            
             let receita: Receita = Receita()
+            
             receita.nome = self.fieldDescricao.text
             receita.valor = Double(self.fieldValor.text!)
+            receita.data = self.fieldData.date
+            
             ReceitaDAO.inserir(receita)
         }
         

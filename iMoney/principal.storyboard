@@ -487,11 +487,11 @@
             </objects>
             <point key="canvasLocation" x="-409" y="-317"/>
         </scene>
-        <!--Relatorio-->
+        <!--Relatório-->
         <scene sceneID="XgC-dZ-Kee">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FZz-49-Aaz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Relatorio" id="G8u-aB-lJ5"/>
+                    <tabBarItem key="tabBarItem" title="Relatório" selectedImage="relatorio" id="G8u-aB-lJ5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ic3-KN-DLf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -509,5 +509,6 @@
     </scenes>
     <resources>
         <image name="Add List-48" width="48" height="48"/>
+        <image name="relatorio" width="1200" height="1200"/>
     </resources>
 </document>

@@ -27,6 +27,7 @@ struct Receita2 {
 class PrincipalTableViewController: UITableViewController {
     
     
+    
     var list: [GestaoFinanceiraProtocol] = []
 
     override func viewDidLoad() {
@@ -59,6 +60,7 @@ class PrincipalTableViewController: UITableViewController {
         self.tableView.reloadData()
     }
 
+
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -82,11 +84,13 @@ class PrincipalTableViewController: UITableViewController {
         if principal is GestaoDespesa {
             cell.nome.text = principal.despesa!.nome
             cell.valor.text = "R$ " + String(principal.despesa!.valor)
+            cell.valor.textColor = UIColor.redColor()
             cell.data.text = String(principal.despesa!.data)
         }
         else {
             cell.nome.text = principal.receita!.nome
             cell.valor.text = "R$ " + String(principal.receita!.valor)
+            cell.valor.textColor = UIColor.greenColor()
             cell.data.text = String(principal.receita!.data)
 
         }
@@ -154,4 +158,5 @@ class PrincipalTableViewController: UITableViewController {
     }
     */
 
+    
 }

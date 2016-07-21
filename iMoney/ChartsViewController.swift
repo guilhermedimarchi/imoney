@@ -52,6 +52,19 @@ class ChartsViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(animated: Bool) {
+        
+        preparingForAnimation()
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        animationChangeSegmentControl()
+        
+    }
+
+    
     func setChart(dataPoints: [String], values: [Double]) {
         
         var dataEntries: [ChartDataEntry] = []
@@ -77,8 +90,25 @@ class ChartsViewController: UIViewController {
         }
         
         pieChartDataSet.colors = colors
+    }
+    
+    /* Responsible for let the elements with the zero opacity */
+    func preparingForAnimation() {
         
-      
+        self.selectedCellLabel.alpha = 0
+        self.pieChartView.alpha      = 0
+        
+    }
+    
+    /* Responsible for let the elements with the high visibility */
+    func animationChangeSegmentControl() {
+        
+        UIView.animateWithDuration(0.5, delay: 0, options: .CurveEaseOut, animations: {
+            
+            self.selectedCellLabel.alpha = 1
+            self.pieChartView.alpha      = 1
+            
+            }, completion: nil)
         
     }
     

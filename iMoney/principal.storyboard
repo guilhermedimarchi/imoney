@@ -253,8 +253,11 @@
                         <outlet property="fieldParcelaAtual" destination="1lX-I8-f0N" id="ckQ-Ou-7Cp"/>
                         <outlet property="fieldParcelaTotal" destination="x0g-PA-2YF" id="PPM-E4-dq3"/>
                         <outlet property="fieldValor" destination="mZ8-Gd-igX" id="hia-YY-LEr"/>
+                        <outlet property="labelCategoria" destination="fTO-Bd-cyR" id="ArP-HL-Zpy"/>
                         <outlet property="labelDe" destination="B3I-B9-qH3" id="VCK-VE-ugt"/>
+                        <outlet property="labelDescricao" destination="atU-yD-VQv" id="hnL-yx-Ozv"/>
                         <outlet property="labelParcela" destination="PBF-fU-vqU" id="dji-Nd-l71"/>
+                        <outlet property="labelValor" destination="0vJ-M2-eZu" id="CV4-Sk-J9T"/>
                         <outlet property="opcao" destination="a33-rU-8n2" id="f8r-au-p7v"/>
                     </connections>
                 </viewController>

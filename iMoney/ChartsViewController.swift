@@ -84,6 +84,9 @@ class ChartsViewController: UIViewController {
         
         preparingForAnimation()
         
+        carregaContas()
+        carregaDadosGrafico()
+        
     }
     
     override func viewDidAppear(animated: Bool) {

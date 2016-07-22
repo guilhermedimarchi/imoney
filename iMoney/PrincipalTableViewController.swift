@@ -78,15 +78,15 @@ class PrincipalTableViewController: UITableViewController {
         
         
         if principal is GestaoDespesa {
-            cell.nome.text = principal.despesa!.nome
-            cell.valor.text = "R$ " + String(principal.despesa!.valor)
+            cell.nome.text = principal.despesa!.nome!
+            cell.valor.text = "R$ " + String(principal.despesa!.valor!)
             cell.valor.textColor = UIColor.redColor()
             let convertedDate = dateFormatter.stringFromDate(principal.despesa!.data!)
             cell.data.text = String(convertedDate)
         }
         else {
-            cell.nome.text = principal.receita!.nome
-            cell.valor.text = "R$ " + String(principal.receita!.valor)
+            cell.nome.text = principal.receita!.nome!
+            cell.valor.text = "R$ " + String(principal.receita!.valor!)
             cell.valor.textColor = UIColor.greenColor()
             let convertedDate = dateFormatter.stringFromDate(principal.receita!.data!)
             cell.data.text = String(convertedDate)
@@ -142,15 +142,24 @@ class PrincipalTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        let destination = segue.destinationViewController as! DetalheViewController
+        
+        //destination.detailImage.image = ERROR!
+        
+        let row = tableView.indexPathForSelectedRow?.row
+        
+        destination.gestao = list[row!]
+        
     }
-    */
+    
 
     
 }

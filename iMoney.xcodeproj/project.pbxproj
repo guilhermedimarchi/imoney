@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BF8EEAC1D42949B00485FE3 /* DetalheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF8EEAB1D42949B00485FE3 /* DetalheViewController.swift */; };
 		3F00988A1D3EF97A00F93F32 /* Despesa+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0098801D3EF97A00F93F32 /* Despesa+CoreDataProperties.swift */; };
 		3F00988B1D3EF97A00F93F32 /* Despesa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0098811D3EF97A00F93F32 /* Despesa.swift */; };
 		3F00988C1D3EF97A00F93F32 /* Conta+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0098821D3EF97A00F93F32 /* Conta+CoreDataProperties.swift */; };
@@ -109,6 +110,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1BF8EEAB1D42949B00485FE3 /* DetalheViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheViewController.swift; sourceTree = "<group>"; };
 		3F0098801D3EF97A00F93F32 /* Despesa+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Despesa+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F0098811D3EF97A00F93F32 /* Despesa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Despesa.swift; sourceTree = "<group>"; };
 		3F0098821D3EF97A00F93F32 /* Conta+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Conta+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				3FC86EBC1D3D92AC006E5AD7 /* PrincipalTableViewController.swift */,
 				3FC86EBE1D3D9351006E5AD7 /* PrincipalTableViewCell.swift */,
 				3FDCAE551D3ED5E900F825CE /* ChartsViewController.swift */,
+				1BF8EEAB1D42949B00485FE3 /* DetalheViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				3F00988E1D3EF97A00F93F32 /* Moeda+CoreDataProperties.swift in Sources */,
 				3F0098931D3EF97A00F93F32 /* Usuario.swift in Sources */,
 				3F00988D1D3EF97A00F93F32 /* Conta.swift in Sources */,
+				1BF8EEAC1D42949B00485FE3 /* DetalheViewController.swift in Sources */,
 				3F00988B1D3EF97A00F93F32 /* Despesa.swift in Sources */,
 				3FF930961D3D7FC100EE3B12 /* AppDelegate.swift in Sources */,
 				3FB3D3D51D402D2500F76DA6 /* MoedaTipo.swift in Sources */,

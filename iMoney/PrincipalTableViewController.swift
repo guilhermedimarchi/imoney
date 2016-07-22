@@ -9,21 +9,6 @@
 import UIKit
 
 
-/*
-struct Receita2 {
-    
-    var nome: String!
-    var valor: Double!
-    var data: String!
-    
-    init (nome: String, valor: Double, data: String) {
-        self.nome = nome
-        self.valor = valor
-        self.data = data
-    }
-}
-
-*/
 class PrincipalTableViewController: UITableViewController {
     
     
@@ -37,17 +22,22 @@ class PrincipalTableViewController: UITableViewController {
         
             
         navigationItem.title = "Conta 1"
-/*
-        let a = Receita(nome: "Mercado", valor: 25.2, data: "25/01/2016")
-        let b = Receita(nome: "Livro", valor: 145.2, data: "25/01/2016")
-        let c = Receita(nome: "Aviao", valor: 8, data: "25/01/2016")
-        let d = Receita(nome: "gas", valor: 999, data: "25/01/2016")
+
+        ContaDAO.deletarAll()
+        var c: Conta = Conta()
+        c.nome = "Conta corrente"
         
-        list.append(a)
-        list.append(b)
-        list.append(c)
-        list.append(d)
-  */
+        
+        
+        
+        ContaDAO.inserir(c)
+        
+        var c1: Conta = Conta()
+        c1.nome = "Poupanca"
+        
+        ContaDAO.inserir(c1)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -79,25 +69,29 @@ class PrincipalTableViewController: UITableViewController {
         //let section = indexPath.section
         //let row = indexPath.row
         
+        
         let principal = list[indexPath.row]
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "EEEE, MMMM dd, yyyy HH:mm"
+        
+        
         
         if principal is GestaoDespesa {
             cell.nome.text = principal.despesa!.nome
             cell.valor.text = "R$ " + String(principal.despesa!.valor)
             cell.valor.textColor = UIColor.redColor()
-            cell.data.text = String(principal.despesa!.data)
+            let convertedDate = dateFormatter.stringFromDate(principal.despesa!.data!)
+            cell.data.text = String(convertedDate)
         }
         else {
             cell.nome.text = principal.receita!.nome
             cell.valor.text = "R$ " + String(principal.receita!.valor)
             cell.valor.textColor = UIColor.greenColor()
-            cell.data.text = String(principal.receita!.data)
+            let convertedDate = dateFormatter.stringFromDate(principal.receita!.data!)
+            cell.data.text = String(convertedDate)
 
         }
-        
-        
-        
-        
         
         
         return cell

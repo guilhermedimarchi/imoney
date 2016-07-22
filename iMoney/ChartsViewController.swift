@@ -15,7 +15,10 @@ class ChartsViewController: UIViewController {
         super.viewDidLoad()
         //-----------------INICIA DROPDOWN---------------------------------
         
-        let items = ["Conta principal", "Poupanca"]
+        carregaContas()
+        carregaDadosGrafico()
+        
+        //let items = ["Conta principal", "Poupanca"]
         self.selectedCellLabel.text = items.first
         self.navigationController?.navigationBar.translucent = false
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.0/255.0, green:180/255.0, blue:220/255.0, alpha: 1.0)
@@ -35,7 +38,7 @@ class ChartsViewController: UIViewController {
         menuView.maskBackgroundOpacity = 0.3
         menuView.didSelectItemAtIndexHandler = {(indexPath: Int) -> () in
             print("Did select item at index: \(indexPath)")
-            self.selectedCellLabel.text = items[indexPath]
+            self.selectedCellLabel.text = self.items[indexPath]
         }
         
         self.navigationItem.titleView = menuView
@@ -44,14 +47,39 @@ class ChartsViewController: UIViewController {
         //-----------------INICIA GRAFICO---------------------------------
         
         // Do any additional setup after loading the view.
-        
+       /*
         let months = ["Comida", "Festa", "Car"]
         let unitsSold = [20.0, 4.0, 6.0]
         
-        setChart(months, values: unitsSold)
+        setChart(months, values: unitsSold)*/
         
     }
     
+    var items: [String] = []
+    func carregaContas(){
+        items = []
+        let contas: [Conta] = ContaDAO.buscarTodos()
+        for c in contas
+        {
+            items.append(c.nome!)
+        }
+    }
+    
+    func carregaDadosGrafico() {
+        var list: [Despesa] = []
+        var months: [String] = []
+        var unitsSold: [Double] = []
+        list = DespesaDAO.buscarTodos()
+        
+        
+        for d in list
+        {
+            months.append(d.nome!)
+            unitsSold.append(Double(d.valor!))
+        }
+        
+        setChart(months, values: unitsSold)
+    }
     override func viewWillAppear(animated: Bool) {
         
         preparingForAnimation()

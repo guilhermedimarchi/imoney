@@ -65,6 +65,27 @@ class ContaDAO {
         }
     }
     
+    static func deletarAll() {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = appDelegate.managedObjectContext
+        
+        // informar que a operação é um "delete"
+        
+        let contas: [Conta] = ContaDAO.buscarTodos()
+        for c in contas
+        {
+            context.deleteObject(c)
+        }
+        
+        do {
+            try context.save()
+            //print("Conta \(conta.nome) foi DELETADA o/")
+            
+        } catch let erro as NSError {
+            print(erro)
+        }
+    }
+    
     
     static func buscarTodos() -> [Conta] {
         // obtendo AppDelegate onde esta a Core Data stack
